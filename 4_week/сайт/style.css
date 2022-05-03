@@ -1,0 +1,199 @@
+h1,
+h2,
+h3,
+p,
+.nav,
+.menu,
+.footer {
+    font-family: 'Rubik', Times, serif;
+    color: black;
+}
+
+button {
+    color: #ffffff;
+    background-color: #19BCE4;
+    border: #19BCE4;
+}
+
+li {
+    list-style-type: none;
+    /* Убираем маркеры */
+}
+
+.menu {
+    padding: 40px;
+}
+
+.menu:hover {
+    color: #19BCE4;
+}
+
+a:link {
+    color: #0000d0;
+    /* Цвет ссылок */
+}
+
+a:visited {
+    color: #900060;
+    /* Цвет посещенных ссылок */
+}
+
+.nav button,
+.about_us button {
+    border-radius: 5px;
+}
+
+.promo {
+    width: 1440px;
+    height: 700px;
+    background-blend-mode: multiply;
+    background-image: url(assets/images/bg_main.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.56);
+}
+
+.promo h1,
+.promo p {
+    color: white;
+}
+
+.promo_header {
+    height: 76px;
+    font-size: 64px;
+}
+
+.promo_text {
+    width: 622px;
+    height: 60px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.options {
+    width: 1170px;
+    height: 118px;
+    background-color: #ffffff;
+}
+
+.location,
+.properties,
+.price {
+    width: 259px;
+    border: 0.5px solid rgba(25, 188, 228, 0.3);
+}
+
+.about_us {
+    width: 1152px;
+    background-color: #ffffff;
+
+}
+
+.icons {
+    width: 56px;
+    height: 56px;
+}
+
+.types {
+    width: 1140px;
+    background-color: #F8FDFE;
+}
+
+.white_bg {
+    background-color: #ffffff;
+}
+
+.places {
+    width: 1170px;
+    background-color: #F8FDFE;
+}
+
+.place_1_bg {
+    width: 370px;
+    height: 540px;
+    background-image: url(assets/images/Rectangle_2186.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.place_2_bg,
+.place_3_bg,
+.place_4_bg,
+.place_5_bg {
+    width: 370px;
+    height: 255px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.place_2_bg {
+    background-image: url(assets/images/Rectangle_2187.png);
+}
+
+.place_3_bg {
+    background-image: url(assets/images/Rectangle_2188.png);
+}
+
+.place_4_bg {
+    background-image: url(assets/images/Rectangle_2189.png);
+}
+
+.place_5_bg {
+    background-image: url(assets/images/Rectangle_2190.png);
+}
+
+.place_1,
+.place_2,
+.place_3,
+.place_4,
+.place_5 {
+    width: 200px;
+    height: 88px;
+    backdrop-filter: blur(5px);
+}
+
+.choose {
+    width: 1140px;
+    background-color: #F8FDFE;
+}
+
+.reviews {
+    width: 1440px;
+    background-color: #FFF8F7;
+}
+
+.reviews img {
+    width: 144px;
+    height: 144px;
+}
+
+.review {
+    width: 370px;
+    height: 280px;
+    background-color: #ffffff;
+}
+
+.subcribe {
+    width: 1152px;
+    height: 251px;
+    background-color: #19BCE4;
+    border-radius: 24px;
+}
+
+.subcribe h2 {
+    padding-top: 48px;
+    padding-left: 260px;
+    color: white;
+}
+
+.subcribe button {
+    position: absolute;
+}
+
+#mail {
+    width: 720px;
+    height: 64px;
+    border-radius: 6px;
+}
