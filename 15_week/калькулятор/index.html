@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <div onclick="clickDiv()">
+        <label for="firstNumber">Введите первое число</label>
+        <input type="text" id="firstNumber" accesskey="f" tabindex="1" />
+    </div>
+    <div onclick="clickDiv()">
+        <label for="secondNumber">Введите второе число</label>
+        <input type="text" id="secondNumber" accesskey="g" tabindex="2" />
+    </div>
+    <button onclick="showResultSum()">+</button>
+    <button onclick="showResultSubtraction()">-</button>
+    <button onclick="showResultDivision()">/</button>
+    <button onclick="showResultMultiplication()">*</button>
+    <input type="text" id="result" accesskey="h" tabindex="3" />
+    <script src="script.js"></script>
+</body>
+
+</html>

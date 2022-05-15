@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="my-5 mx-3">
+            <h4>Создайте аккаунт Google</h4>
+            <p>Перейти в Gmail</p>
+            <form>
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label for="exampleInputName"></label>
+                        <input type="text" class="form-control form-control-lg" id="exampleInputName" placeholder="Имя">
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="lastName"></label>
+                        <input type="text" class="form-control form-control-lg" id="lastName" placeholder="Фамилия">
+                    </div>
+                    <div class="form-group col-12">
+                        <label for="username"></label>
+                        <input type="email" class="form-control form-control-lg" id="email" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">Можно использовать буквы латинского алфавита,
+                            цифры и точки.</small>
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="exampleInputPassword1"></label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="exampleInputPassword2"></label>
+                        <input type="password" class="form-control" id="exampleInputPassword2"
+                            placeholder="Подтвердить">
+                    </div>
+                    <div class="col-12"><small id="emailHelp" class="form-text text-muted">Пароль должен содержать
+                            не менее восьми знаков, включать буквы, цифры и специальные символы</small>
+                    </div>
+                </div>
+                <div id="errorMessage" class="error"></div>
+                <div class="d-flex justify-content-between mt-5">
+                    <button type="button" class="btn btn btn-link">Войти</button>
+                    <button type="button" onclick="check()" class="btn btn-primary">Далее</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
