@@ -1,0 +1,13 @@
+.container {
+    max-width:70vw;
+    min-height: 60vw;
+    border-radius: 3px;
+    border: 2px solid #4d70b4;
+    }
+.underline {
+border-bottom: 1px solid #ced4da;
+}
+
+#comment {
+    min-height: 40vw;
+}
