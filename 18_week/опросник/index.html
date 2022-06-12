@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваш питомец</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="petName">Кличка питомца</label>
+            <input type="text" name="petname" id="petName" accesskey="f" tabindex="1" required/>
+        </div>
+        <div>
+            <label for="Name">Имя владельца</label>
+            <input type="text" name="name" id="Name" accesskey="g" tabindex="2" required/>
+        </div>
+        <div>
+            <label for="phone">Телефон владельца</label>
+            <input type="tel" name="phone" placeholder="+7(999)999-99-99" minlength="10" maxlength="20" id="phone" accesskey="h" tabindex="3" required></input>
+        </div>
+        <div>
+          <label for="contacts">E-Mail владельца</label>
+          <input type="email" name="email" placeholder="example@email.ru" minlength="10" maxlength="20" id="contacts" accesskey="h" tabindex="3" required></input>
+      </div>
+        <div>
+            <label for="breed">Порода питомца</label>
+            <select id="breed" accesskey="j" tabindex="4">
+                <option value="1">Бенгальская кошка</option>
+                <option value="2">Сиамская кошка</option>
+                <option value="3" selected="selected">Абиссинская кошка</option>
+            </select>
+        </div>
+        <div>
+            Чем питается:<br>
+            <label for="1">Сухой корм</label>
+            <input type="checkbox" id="1" accesskey="k" tabindex="5" /><br>
+            <label for="2">Влажный корм</label>
+            <input type="checkbox" id="2" accesskey="l" tabindex="6" /><br>
+            <label for="3">Натуральный корм</label>
+            <input type="checkbox" id="3" accesskey="m" tabindex="7" />
+        </div>
+        <div>
+            Пол:<br>
+            <label for="f">Самец</label>
+            <input type="radio" id="f" name="sex" accesskey="c" tabindex="8" /><br>
+            <label for="m">Самка</label>
+            <input type="radio" id="m" name="sex" accesskey="v" tabindex="9" />
+        </div>
+        <div>
+            <label for="comment">Комментарий владельца:</label>
+            <textarea rows="20" id="comment" accesskey="b" tabindex="11"></textarea>
+        </div>
+        <div>
+            <label for="foto">Приложить фото питомца</label>
+            <input type="file" id="foto" accesskey="n" tabindex="10" />
+        </div>
+        <div>
+            <button type="submit">Сохранить</button>
+        </div>
+    </form>
+</body>
+
+</html>
