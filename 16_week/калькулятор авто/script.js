@@ -13,13 +13,13 @@ function sum() {
             values.push(option.value);
         }
     });
-    inputValue.forEach((checkbox) =>{
+    inputValue.forEach((checkbox) => {
         if (checkbox.checked) {
             values.push(checkbox.value);
         }
     });
-const result = values.reduce((sum, item) => sum += +item,0);
-сarСost.innerHTML = 'Стоимость авто: до ' + result + ' млн. руб.'; 
+    const result = values.reduce((sum, item) => sum += +item, 0);
+    сarСost.innerHTML = 'Стоимость авто: до ' + result + ' млн. руб.';
 }
 
 function getModelValue() {
@@ -32,10 +32,10 @@ function getYearValue() {
 
 function getVacancies() {
     const vacancies = [];
-    if (!getModelValue()){
+    if (!getModelValue()) {
         vacancies.push('Пожалуйста, выберите модель авто');
     }
-    if (!getYearValue()){
+    if (!getYearValue()) {
         vacancies.push('Пожалуйста, выберите год выпуска');
     }
     if (!check.find((element) => element.checked)) {
@@ -52,7 +52,7 @@ function onButtonClick() {
     } else {
         errors.forEach((elem) => {
             result += "<br>" + elem;
-            сarСost.innerHTML = result; 
+            сarСost.innerHTML = result;
         })
     }
 }
