@@ -33,7 +33,7 @@ function getYearValue() {
 function getVacancies() {
     const vacancies = [];
     if (!getModelValue()) {
-        vacancies.push('Пожалуйста, выберите модель авто');
+        c
     }
     if (!getYearValue()) {
         vacancies.push('Пожалуйста, выберите год выпуска');
