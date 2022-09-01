@@ -1,0 +1,96 @@
+.card {
+   display: flex; 
+   flex-direction: column;
+   border: 1px solid white;
+}
+
+.selected {
+   width: 400px; 
+   height: 300px;
+   justify-content: stretch;
+   box-shadow: 0px 5px 15px #000000;
+
+}
+
+.card-tariff, .card-price,.card-traffic, .card-footer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid white;
+}
+
+.card-tariff {
+   height: 4rem;
+   background-color: aqua;
+   font-size: 20px;
+}
+
+.card-price {
+   height: 7rem;
+   justify-content: center;
+   text-align: center;
+   border: 1px solid white;
+   background-color: aqua;
+   font-size: 50px;
+}
+
+.card-tariff, 
+.card-price {
+   color: white;
+}
+.sup {
+   vertical-align: super;
+}
+
+.sub {
+   vertical-align: sub;
+   align-self: flex-end;
+}
+
+.sup, 
+.sub {
+   height: 50px;
+   font-size: 12px;
+}
+
+.card-traffic {
+   height: 3rem;
+   background-color: rgb(224, 224, 230);
+}
+
+.card-footer {
+   height: 20%;
+   background-color: rgb(185, 185, 187);
+}
+
+.blue {
+   background-color: rgb(99, 161, 223);
+}
+
+.light_blue{
+   background-color: rgb(155, 191, 227);
+}
+
+.green {
+   background-color: rgb(47, 104, 62);
+}
+
+.light_green {
+   background-color: rgb(83, 179, 108)
+} 
+
+.red {
+   background-color: rgb(232, 83, 83);
+}
+
+.light_red {
+   background-color: rgb(247, 137, 137);
+}
+
+.black {
+   background-color: rgb(18, 7, 37);
+}
+
+.light_black {
+   background-color: rgb(42, 41, 43)
+};
