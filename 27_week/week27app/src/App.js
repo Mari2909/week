@@ -12,6 +12,7 @@ function App() {
       {
         datas.map((data) =>
           <Card
+            key={data.tariff}
             tariff={data.tariff}
             price={data.price}
             traffiс={data.traffiс}
