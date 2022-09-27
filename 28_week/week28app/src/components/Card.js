@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Card.css';
 
 export default function Card(props) {
@@ -24,18 +24,13 @@ export default function Card(props) {
     let isSelected = "";
     if (props.isSelected) isSelected = "selected";
 
-    const [pressed, setPressed] = useState(false);
-
-    const handleChange = () => {
-        setPressed(!pressed);
-    }
 
     return (
-        <div className={pressed ? 'card selected' : 'card'} onClick={handleChange}>
+        <div className={props.value} onClick={props.onClick}>
             <div className={`card-tariff ${color}`}>{props.tariff}</div>
             <div className={`card-price ${color_light}`}>
-                <span class="sup">руб</span>{props.price}
-                <span class="sub">/мес</span>
+                <span className="sup">руб</span>{props.price}
+                <span className="sub">/мес</span>
             </div>
             <div className="card-traffic">{props.traffiс}</div>
             <div className="card-footer">{props.footer}</div>
