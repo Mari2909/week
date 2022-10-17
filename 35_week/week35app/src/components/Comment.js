@@ -8,16 +8,13 @@ function checkSpam(str) {
 }
 
 let comments = [];
-
-let color;
-
 export default class FormComment extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
             value: '',
-            color: ''
+            color: '#' + Math.random().toString(16).substr(-6)
         };
     }
 
@@ -26,28 +23,24 @@ export default class FormComment extends React.Component {
     }
 
     handleSubmit = (e) => {
-        comments.unshift(checkSpam(this.state.value));
-        console.log(comments)
+        this.setState({ color: '#' + Math.random().toString(16).substr(-6) })
+        comments.unshift([checkSpam(this.state.value), this.state.color]);
         this.setState({ comments: comments })
-        color = '#' + Math.random().toString(16).substr(-6);
-        this.setState({ color: color });
-        console.log(color)
         e.preventDefault();
     }
 
 
     render() {
-
         return (
-            <form form className='container' onSubmit={this.handleSubmit} >
+            <form className='container' onSubmit={this.handleSubmit} >
                 <div className="mb-3">
                     <div id="comment">
                         {comments.map((item, index) => {
-                            return <Comment key={index} comment={item} color={this.state.color} />
+                            return <Comment key={index} comment={item[0]} color={item[1]} />
                         })}
                     </div>
                     <div className="form-group">
-                        <label for="exampleFormControlTextarea1"></label>
+                        <label htmlFor="exampleFormControlTextarea1"></label>
                         <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" value={this.state.value} onChange={this.handleChange} ></textarea>
                     </div>
                 </div>
